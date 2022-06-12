@@ -1,0 +1,73 @@
+/*основной цвет текста #212121*/
+/*вторичный цвет текста #757575*/
+/*акцент #2196F3*/
+/*белый #FFFFFF*/
+/* #FFFFFF 60 %*/
+/*фон #2F303A*/
+/* backgraund #FFFFFF*/
+/* секция команда #F5F4FA*/
+
+
+:root {
+    --primary-text-color:#212121;
+    --accent-color: #2196F3;
+    --text-color:#757575;
+    --text-white-color:#FFFFFF
+}
+
+body {
+    background-color: #FFFFFF;
+    color: var(--primary-text-color)
+}
+.logo {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.section-titel{
+    color: var(--primary-text-colo);
+}
+/*site-nave*/
+
+.site-nav .link {
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color:  var(--accent-color);
+}
+
+/*contact-nav*/
+
+.contact-nav .link{
+    color:var(--text-color);
+}
+.contact-nav .link:hover,
+.contact-nav .link:focus{
+    color: var(--accent-color);
+}
+
+/*hero*/
+.hero{background-color: #2F303A;}
+.hero-title{
+    color:var(--text-white-color);
+}
+
+/*specialty*/
+.specialty .specialty-title{
+    color:var(--primary-text-color);
+}
+.specialty-text{color: var(--text-color);}
+
+/*about*/
+
+
+/*team*/
+.team-title{color: var(--primary-text-color);}
+.team-text{color: var(--text-color);}
+
+
