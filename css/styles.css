@@ -110,6 +110,8 @@ body {
 /*button*/
 .button{
     background-color: var(--primary-background-color);
+    cursor: pointer;
+
     color:var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
