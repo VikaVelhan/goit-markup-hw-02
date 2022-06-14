@@ -12,39 +12,80 @@
     --primary-text-color:#212121;
     --accent-color: #2196F3;
     --text-color:#757575;
-    --text-white-color:#FFFFFF
+    --text-white-color:#FFFFFF;
+    --primary-background-color:#FFFFFF;
+    --secondary-background-color:#F5F4FA;
+    --darck-background-color:#2F303A;
+    --footer-text-accent:rgba(255, 255, 255, 0.6);
 }
 
+/*body*/
 body {
-    background-color: #FFFFFF;
-    color: var(--primary-text-color)
+    background-color:var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family:'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
 }
-.logo {
-    color: var(--accent-color);
-}
+
+
 
 .list {
     list-style: none;
 }
-
-.section-titel{
-    color: var(--primary-text-colo);
+.link {
+    text-decoration: none;
 }
+.section .section-title{
+    color: var(--primary-text-colo); 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2; 
+}
+
+
+/*logo*/
+
+.logo .web {
+    color: var(--accent-color);
+}
+.logo .studio {
+    color:var(--primary-text-color);
+}
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+
 /*site-nave*/
 
 .site-nav .link {
     color: var(--primary-text-color);
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus{
     color:  var(--accent-color);
 }
+.site-nav .link.current {
+    color: var(--accent-color);}
+
 
 /*contact-nav*/
 
 .contact-nav .link{
     color:var(--text-color);
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus{
@@ -52,22 +93,124 @@ body {
 }
 
 /*hero*/
-.hero{background-color: #2F303A;}
+.hero{
+    background-color:var(--darck-background-color);
+}
 .hero-title{
     color:var(--text-white-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
-/*specialty*/
-.specialty .specialty-title{
+/*button*/
+.button{
+    background-color: var(--primary-background-color);
     color:var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
 }
-.specialty-text{color: var(--text-color);}
+
+.button:hover,
+.button:focus{
+    color: var(--text-white-color);
+    background-color: var(--accent-color);
+}
+
+.button-primary{
+    background-color: var(--accent-color);
+    color: var(--text-white-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+
+
+
+/*specialty*/
+.specialty .specialty-title {
+    color:var(--primary-text-color);
+
+    font-weight: 700;
+    line-height: 1.14;
+}
+.specialty-text{
+    color: var(--text-color);
+
+    font-weight: 400;
+    line-height: 1.71;
+}
 
 /*about*/
 
-
 /*team*/
-.team-title{color: var(--primary-text-color);}
-.team-text{color: var(--text-color);}
+.team-title{
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.team-text{
+    color: var(--text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+}
 
 
+/*footer*/
+.footer{
+    background-color:var(--darck-background-color);
+}
+.footer .logo .web {
+    color: var(--accent-color);
+}
+.footer .logo .studio {
+    color:var(--text-white-color);
+}
+.footer .contact .link{
+    color:var(--footer-text-accent);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.footer .contact .address{
+    color: var(--text-white-color);
+
+font-style: normal;
+font-weight: 400;
+
+line-height: 1.7;
+}
+.footer .contact .link:hover,
+.footer .contact .link:focus,
+.footer .contact .address:hover,
+.footer .contact .address:focus{
+    color: var(--accent-color);
+}
+    
+/*portfolio*/
+.list-projekt .portfolio-title {
+    color:var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.list-projekt .portfolio-category {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.86;
+}
