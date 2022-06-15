@@ -112,6 +112,7 @@ body {
     background-color: var(--primary-background-color);
     cursor: pointer;
 
+    font-family: 'Roboto',sans-serif;
     color:var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -122,6 +123,11 @@ body {
 .button:focus{
     color: var(--text-white-color);
     background-color: var(--accent-color);
+}
+
+.button-all:active{
+    color:var(--text-white-color);
+    background-color:var(--accent-color);
 }
 
 .button-primary{
@@ -138,11 +144,27 @@ body {
 
 
 /*specialty*/
+.specialty .section-title {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
 .specialty .specialty-title {
     color:var(--primary-text-color);
 
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
+    text-transform: uppercase;
 }
 .specialty-text{
     color: var(--text-color);
@@ -188,19 +210,30 @@ body {
 .footer .contact .address{
     color: var(--text-white-color);
 
-font-style: normal;
-font-weight: 400;
+    font-style: normal;
+    font-weight: 400;
 
 line-height: 1.7;
 }
-.footer .contact .link:hover,
-.footer .contact .link:focus,
-.footer .contact .address:hover,
-.footer .contact .address:focus{
+.footer .contact .link-contact:hover,
+.footer .contact .link-contact:focus{
     color: var(--accent-color);
 }
     
 /*portfolio*/
+.portfolio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .list-projekt .portfolio-title {
     color:var(--primary-text-color);
     font-weight: 700;
