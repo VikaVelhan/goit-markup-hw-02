@@ -57,6 +57,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    color: #000000;
 }
 
 
@@ -125,7 +126,7 @@ body {
     background-color: var(--accent-color);
 }
 
-.button-all:active{
+.button.button-all:active{
     color:var(--text-white-color);
     background-color:var(--accent-color);
 }
